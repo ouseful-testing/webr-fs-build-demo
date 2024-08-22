@@ -1,5 +1,6 @@
-# webr-dist-build-demo-
-Experimenting with building a custom webr wasm distribution.
+# webr-filesystem-build-demo
+
+Experimenting with building a custom webr wasm file system.
 
 This repo contains an action ([via](https://github.com/r-wasm/actions/tree/main/.github/workflows#r-wasmactions-reusable-workflows)) for creating a [webr Webassembly filesystem](https://docs.r-wasm.org/webr/latest/mounting.html) that bundles several packages.
 
