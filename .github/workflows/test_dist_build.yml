@@ -1,0 +1,19 @@
+name: Build M348 test webr distribution
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: ./.github/workflows/release-file-system-image.yml
+    with:
+      packages: |
+        nlme
+        urca
+        plm
+        formatR
+        local::./packages/M348_1.3.4.tar.gz
+      strip: "demo, doc, examples, html, tests, vignette"
+    #permissions:
+    #  contents: write
+    #  repository-projects: read
