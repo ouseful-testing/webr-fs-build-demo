@@ -1,8 +1,9 @@
 name: Build M348 test webr distribution
 
 on:
-  workflow_dispatch:
-
+  #workflow_dispatch:
+  release:
+    types: [published]
 jobs:
   build:
     uses: ./.github/workflows/release-file-system-image.yml
